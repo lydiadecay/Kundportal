@@ -1,5 +1,7 @@
 import React from "react";
 import "./App.css";
+import "./Components/index-component";
+import "./Components/login-component";
 
 function App() {
   return (
