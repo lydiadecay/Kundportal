@@ -1,7 +1,12 @@
 import React, { Component } from "react";
+import Login from "./login";
+import Index from "./Components/indexComponent";
 import "./Styling/App.css";
-import "./Components/index-component";
-import "./Components/login-component";
 
-class App extends Component {}
+class App extends React.Component {
+  render() {
+    return <Login />;
+  }
+}
+
 export default App;
