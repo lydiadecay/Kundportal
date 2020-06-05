@@ -1,14 +1,7 @@
-import React from "react";
-import "./App.css";
+import React, { Component } from "react";
+import "./Styling/App.css";
 import "./Components/index-component";
 import "./Components/login-component";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">hi</header>
-    </div>
-  );
-}
-
+class App extends Component {}
 export default App;
