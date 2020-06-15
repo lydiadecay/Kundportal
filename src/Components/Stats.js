@@ -1,5 +1,5 @@
 import React from "react";
-import Chart from "../Components/chartComponent";
+//import Chart from "../Components/chartComponent";
 
 const style = {
   content: {
@@ -18,7 +18,6 @@ const Stats = () => {
       <div style={{ padding: 20, borderBottom: "1px solid #eee" }}>
         Mitt innehav
       </div>
-      <Chart />
     </div>
   );
 };
