@@ -1,3 +1,22 @@
-.App {
-  text-align: center;
+.sidebar {
+  display: flex;
+  width: 300px;
+  background: #333;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.logo {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
 }
