@@ -3,7 +3,7 @@ import "../Styling/App.css";
 import { Link, useLocation } from "react-router-dom";
 import pic from "../Pictures/Image 2@2x.png";
 
-const Siderbar = () => {
+const Sidebar = () => {
   let match = useLocation();
   console.log(match);
   return (
@@ -24,4 +24,4 @@ const Siderbar = () => {
   );
 };
 
-export default Siderbar;
+export default Sidebar;
