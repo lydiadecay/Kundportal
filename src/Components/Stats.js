@@ -1,5 +1,4 @@
 import React from "react";
-//import Chart from "../Components/chartComponent";
 
 const style = {
   content: {

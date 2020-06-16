@@ -1,4 +1,5 @@
 import React from "react";
+import stocks from "../Data/stocks.json";
 
 const style = {
   box: {
@@ -17,13 +18,19 @@ const style = {
   },
 };
 
+class myStocks extends React.Component {
+  state = {
+    stocks: [],
+  };
+}
+
 const Portfolio = () => {
   return (
     <div style={style.box}>
-      <span style={{ fontSize: 20, marginBottom: 20 }}>Portfolio</span>
+      <span style={{ fontSize: 20, marginBottom: 20 }}>My Portfolio</span>
       <div style={style.content}>
         <div style={{ padding: 20, borderBottom: "1px solid #eee" }}>
-          Portfolio
+          My Portfolio
         </div>
       </div>
     </div>
@@ -31,3 +38,12 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
+/**TO DO:
+- last updated
+- table with json elements
+- ladda ner aktiebrevet --> array, map, onClick alert, hover box
+- navigate through pages
+- buttons for page numbers
+- dropdown list for pages
+- styling  */
