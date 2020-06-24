@@ -1,0 +1,9 @@
+input{
+float: left;
+margin: 8px;
+}
+
+p{
+    float: left;
+    margin: auto;
+}
