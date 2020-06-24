@@ -7,11 +7,9 @@ const Settings = () => {
     
     <header>
           <h1> Settings</h1>
-          <NavLink to="/settings/myprofile" activeClassName="is-active">myprofile</NavLink>
-          <br/>
-          <NavLink to="/settings/changepassword" activeClassName="is-active">changepassword</NavLink>
-          <br/>
-          <NavLink to="/settings/preferences" activeClassName="is-active">preferences</NavLink>
+          <NavLink to="/settings/myprofile" activeClassName="is-active"> myprofile </NavLink>
+          <NavLink to="/settings/changepassword" activeClassName="is-active"> changepassword </NavLink>
+          <NavLink to="/settings/preferences" activeClassName="is-active"> preferences </NavLink>
     </header>
     </div>;
 }
