@@ -2,14 +2,18 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import Dashboard from "./Pages/Dashboard";
 import Login from "./Pages/Login";
 import Settings from "./Pages/Settings";
 import Portfolio from "./Pages/Portfolio";
 import Header from "./Components/Sidebar";
 
-const ErrorPage = () => <div>error</div>;
+const ErrorPage = () => (
+  <div>
+    Error - <Link to="/">Back to Dashboard</Link>
+  </div>
+);
 
 const routes =
   (console.log("router working"),

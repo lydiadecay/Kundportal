@@ -8,6 +8,7 @@ const style = {
     flexDirection: "column",
     flex: 1,
     padding: 20,
+    background: "#F6FAFB",
   },
 };
 

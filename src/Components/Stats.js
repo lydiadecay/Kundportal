@@ -15,7 +15,7 @@ const Stats = () => {
   return (
     <div style={style.content}>
       <div style={{ padding: 20, borderBottom: "1px solid #eee" }}>
-        Mitt innehav
+        My Tenancy
       </div>
     </div>
   );
