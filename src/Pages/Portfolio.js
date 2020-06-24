@@ -1,7 +1,6 @@
 import React from "react";
 import stocks from "../Data/stocks.json";
 import "../Styling/App.css";
-import Button from "../Components/Button";
 import download from "../Pictures/download.png";
 
 const style = {
@@ -21,18 +20,22 @@ const style = {
     flex: 1,
   },
   head: {
-    color: "#A1A8C3",
+    color: "#000",
     textAlign: "left",
     letterSpacing: 0,
     opacity: 1,
-    fontWeight: 100,
+
     fontFamily: "Poppins",
   },
   body: {
-    fontWeight: 100,
-    color: "#3C3C3B",
+    color: "#000",
     fontFamily: "Poppins",
   },
+};
+
+const generateButtons = () => {
+  let num = "1234567".split("");
+  return num.map((num) => <div style={{ padding: 10 }}>{num}</div>);
 };
 
 const Portfolio = () => {
@@ -43,57 +46,56 @@ const Portfolio = () => {
       </span>
       <div style={style.content}>
         <table className="stocks-table">
-          <div style={{ padding: 20, borderBottom: "1px solid #eee" }}>
-            <thead style={style.head}>
-              <tr>
-                <th
-                  style={{ marginRight: 20, fontWeight: 100 }}
-                  className="th-company"
-                >
-                  Company
-                </th>
+          <thead
+            style={{
+              ...style.head,
+              padding: 20,
+              borderBottom: "1px solid #eee",
+            }}
+          >
+            <tr>
+              <th
+                style={{ marginRight: 20, padding: 10 }}
+                className="th-company"
+              >
+                Company
+              </th>
 
-                <th
-                  style={{ marginRight: 40, fontWeight: 100 }}
-                  className="th-tenancy"
-                >
-                  Tenancy
-                </th>
+              <th
+                style={{ marginRight: 40, padding: 10 }}
+                className="th-tenancy"
+              >
+                Tenancy
+              </th>
 
-                <th
-                  style={{ marginRight: 40, fontWeight: 100 }}
-                  className="th-stocktype"
-                >
-                  Stock type
-                </th>
+              <th
+                style={{ marginRight: 40, padding: 10 }}
+                className="th-stocktype"
+              >
+                Stock type
+              </th>
 
-                <th
-                  style={{ marginRight: 40, fontWeight: 100 }}
-                  className="th-amount"
-                >
-                  Amount of stocks
-                </th>
+              <th
+                style={{ marginRight: 40, padding: 10 }}
+                className="th-amount"
+              >
+                Amount of stocks
+              </th>
 
-                <th
-                  style={{ marginRight: 40, fontWeight: 100 }}
-                  className="th-stocknumber"
-                >
-                  Stock number
-                </th>
+              <th
+                style={{ marginRight: 40, padding: 10 }}
+                className="th-stocknumber"
+              >
+                Stock number
+              </th>
 
-                <th
-                  style={{ marginRight: 40, fontWeight: 100 }}
-                  className="th-share"
-                >
-                  Share
-                </th>
+              <th style={{ marginRight: 40, padding: 10 }} className="th-share">
+                Share
+              </th>
 
-                <th style={{ fontWeight: 100 }} className="th-value">
-                  Voting value
-                </th>
-              </tr>
-            </thead>
-          </div>
+              <th className="th-value">Voting value</th>
+            </tr>
+          </thead>
 
           {stocks.slice(0, 10).map((stock) => (
             <tbody style={style.body}>
@@ -132,6 +134,22 @@ const Portfolio = () => {
             </tbody>
           ))}
         </table>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <div style={{ display: "flex" }}>
+            <div style={{ padding: 10 }}>{"<<"} </div>
+            <div style={{ padding: 10 }}>{"<"} </div>
+            {generateButtons()}
+            <div style={{ padding: 10 }}>{">"}</div>
+            <div style={{ padding: 10 }}>{">>"}</div>
+          </div>
+
+          <div style={{ display: "flex" }}>
+            <div style={{ padding: 10, bordeRadius: 3, background: "yellow" }}>
+              10
+            </div>
+            <div style={{ padding: 10 }}>41-50 av 350</div>
+          </div>
+        </div>
       </div>
     </div>
   );

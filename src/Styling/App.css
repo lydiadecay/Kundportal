@@ -24,12 +24,18 @@
   text-decoration: none;
   font-family: "Poppins";
   font-weight: 100;
-  size: 13px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+
+.link:hover {
+  background: rgba(0, 0, 0, 5);
 }
 
 .stocks-table {
   font-family: "Poppins";
-  size: 14px;
+  font-size: 14px;
 }
 
 .th-company {
@@ -68,8 +74,7 @@
   text-decoration: none;
   font-family: "Poppins";
   font-weight: 100;
-  size: 13px;
+  font-size: 13px;
   padding: 20px;
   margin-top: 65vh;
-  border-top: 1px solid #c9b791;
 }
