@@ -1,5 +1,5 @@
 import React from "react";
-import "./ChangePassword.css";
+import "./Settings.css";
 import {NavLink} from "react-router-dom";
 
 //fixa senare
@@ -13,7 +13,7 @@ const ChangePassword = () => {
     <NavLink to="/settings/myprofile" activeClassName="is-active" id="link"> myprofile </NavLink>
     <NavLink to="/settings/changepassword" activeClassName="is-active"> changepassword </NavLink>
     <NavLink to="/settings/preferences" activeClassName="is-active"> preferences </NavLink>
-    </div>;
+    </div>
 
     <p>Current password</p>
     <br/>
