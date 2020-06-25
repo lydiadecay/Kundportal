@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import Dashboard from "./Pages/Dashboard";
 import Login from "./Pages/Login";
 import Settings from "./Pages/Settings";
@@ -12,7 +12,11 @@ import MyProfile from "./Pages/SettingsSubPage/MyProfile";
 import ChangePassword from "./Pages/SettingsSubPage/ChangePassword";
 import Preferences from "./Pages/SettingsSubPage/Preferences";
 
-const ErrorPage = () => <div>error</div>;
+const ErrorPage = () => (
+  <div>
+    Error - <Link to="/">Back to Dashboard</Link>
+  </div>
+);
 
 const routes =
   (console.log("router working"),

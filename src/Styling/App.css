@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap");
+
 .sidebar {
   display: flex;
-  width: 300px;
-  background: #333;
+  width: 220px;
+  height: 800px;
+  background: #3c3c3b;
   min-height: 100vh;
   flex-direction: column;
 }
@@ -15,8 +18,63 @@
 
 .link {
   padding: 10px 20px;
-  background: rgba(0, 0, 0, 0.1);
+  background: #292929;
   cursor: pointer;
-  color: white;
+  color: #fdcc6b;
   text-decoration: none;
+  font-family: "Poppins";
+  font-weight: 100;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+
+.link:hover {
+  background: rgba(0, 0, 0, 5);
+}
+
+.stocks-table {
+  font-family: "Poppins";
+  font-size: 14px;
+}
+
+.th-company {
+  height: 14px;
+  margin-right: 40px;
+}
+
+.th-tenancy {
+  height: 14px;
+  margin-right: 40px;
+}
+
+.th-stocktype {
+  height: 14px;
+  margin-right: 40px;
+}
+.th-amount {
+  height: 14px;
+  margin-right: 40px;
+}
+.th-stocknumber {
+  height: 14px;
+  margin-right: 40px;
+}
+.th-share {
+  height: 14px;
+  margin-right: 40px;
+}
+.th-value {
+  height: 14px;
+}
+
+.logOut {
+  text-align: center;
+  color: #c9b791;
+  text-decoration: none;
+  font-family: "Poppins";
+  font-weight: 100;
+  font-size: 13px;
+  padding: 20px;
+  margin-top: 65vh;
 }

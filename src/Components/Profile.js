@@ -22,7 +22,7 @@ const Profile = () => {
   return (
     <div style={style.content}>
       <div style={{ padding: 20, borderBottom: "1px solid #eee" }}>
-        Min Profil
+        My Profile
       </div>
       <div style={style.user}>
         <div
