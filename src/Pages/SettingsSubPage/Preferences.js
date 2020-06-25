@@ -1,6 +1,6 @@
 import React from "react";
-import "./Preferences.css";
-import {NavLink } from "react-router-dom";
+import "./Settings.css";
+import {NavLink} from "react-router-dom";
 
 
 const Preferences = () => {
@@ -12,7 +12,7 @@ const Preferences = () => {
         <NavLink to="/settings/myprofile" activeClassName="is-active"> myprofile </NavLink>
         <NavLink to="/settings/changepassword" activeClassName="is-active"> changepassword </NavLink>
         <NavLink to="/settings/preferences" activeClassName="is-active"> preferences </NavLink>
-        </div>;
+        </div>
 
         <p>Bygg</p>
       <input

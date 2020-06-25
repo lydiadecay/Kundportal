@@ -1,6 +1,6 @@
 import React from "react";
-import "./ChangePassword.css";
-import {NavLink } from "react-router-dom";
+import "./Settings.css";
+import {NavLink} from "react-router-dom";
 
 const MyProfile = () => {
   
@@ -12,7 +12,7 @@ const MyProfile = () => {
           <NavLink to="/settings/myprofile" activeClassName="is-active"> myprofile </NavLink>
           <NavLink to="/settings/changepassword" activeClassName="is-active"> changepassword </NavLink>
           <NavLink to="/settings/preferences" activeClassName="is-active"> preferences </NavLink>
-    </div>;
+    </div>
 
     <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Johnny_Depp_Deauville_2019.jpg" alt="profilepic" width="100" height="150"></img>
     <div>
