@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import preferences from "../Pages/Preferences";
 
 const style = {
   box: {
@@ -29,21 +30,12 @@ const Settings = () => {
             Settings
           </h1>
 
-          <NavLink to="/SettingsSubPage/myprofile" activeClassName="is-active">
-            {" "}
-            My Profile{" "}
-          </NavLink>
-          <NavLink
-            to="/SettingSubPage/changepassword"
-            activeClassName="is-active"
-          >
+          <NavLink to="/myprofile"> My Profile </NavLink>
+          <NavLink to="/changepassword" activeClassName="is-active">
             {" "}
             Change Password{" "}
           </NavLink>
-          <NavLink
-            to="/SettingsSubPage/preferences"
-            activeClassName="is-active"
-          >
+          <NavLink to={preferences} activeClassName="is-active">
             {" "}
             Preferences{" "}
           </NavLink>

@@ -1,0 +1,20 @@
+img {
+  padding: 10%;
+}
+
+#link {
+  size: 5cm;
+}
+
+input {
+  margin: 8px;
+}
+
+p {
+  float: left;
+  margin: auto;
+}
+
+#divv {
+  background-color: blue;
+}

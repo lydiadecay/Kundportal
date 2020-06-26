@@ -1,5 +1,5 @@
 import React from "react";
-import "./Settings.css";
+import "../Styling/Settings.css";
 import { NavLink } from "react-router-dom";
 
 const style = {

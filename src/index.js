@@ -8,9 +8,9 @@ import Login from "./Pages/Login";
 import Settings from "./Pages/Settings";
 import Portfolio from "./Pages/Portfolio";
 import Header from "./Components/Sidebar";
-import MyProfile from "./Pages/SettingsSubPage/MyProfile";
-import ChangePassword from "./Pages/SettingsSubPage/ChangePassword";
-import Preferences from "./Pages/SettingsSubPage/Preferences";
+import MyProfile from "./Pages/MyProfile";
+import ChangePassword from "./Pages/ChangePassword";
+import Preferences from "./Pages/Preferences";
 
 const ErrorPage = () => (
   <div>
@@ -28,16 +28,12 @@ const routes =
           <Route path="/dashboard" component={Dashboard} exact={true} />
           <Route exact path="/settings" component={Settings} />
           <Route path="/portfolio" component={Portfolio} />
-
-          <Route path="/SettingsSubPage/myprofile" component={MyProfile} />
-          <Route
-            path="/SettingsSubPage/changepassword"
-            component={ChangePassword}
-          />
-          <Route path="/SettingsSubPage/preferences" component={Preferences} />
-          <Route path="/settings/errorpage" component={ErrorPage} />
           <Route path="/" component={Login} />
 
+          <Route path="/settings/myprofile" component={MyProfile} />
+          <Route path="/settings/changepassword" component={ChangePassword} />
+          <Route path="/settings/preferences" component={Preferences} />
+          <Route component={ErrorPage} />
         </Switch>
       </div>
     </BrowserRouter>
