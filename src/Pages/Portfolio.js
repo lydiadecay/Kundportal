@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import stocks from "../Data/stocks.json";
 import "../Styling/App.css";
 import download from "../Pictures/download.png";
@@ -37,6 +37,9 @@ const style = {
     textDecoration: "none",
     display: "inline-block",
   },
+  input: {
+    width: "66%",
+  },
 };
 
 const generateButtons = () => {
@@ -45,8 +48,9 @@ const generateButtons = () => {
 };
 
 const Portfolio = () => {
+  const [stocksize, setStockSize] = useState("");
   return (
-    <div style={style.box}>
+      <div style={style.box}>
       <span style={{ fontSize: 22, marginBottom: 20, color: "#656565" }}>
         My Portfolio
         <div style={{ color: "#A1A8C3", fontSize: 13 }}>
@@ -106,7 +110,7 @@ const Portfolio = () => {
             </tr>
           </thead>
 
-          {stocks.slice(0, 10).map((stock) => (
+          {stocks.slice(0, stocksize).map((stock) => (
             <tbody style={style.body}>
               <tr>
                 <td style={{ padding: 10, borderBottom: "1px solid #eee" }}>
@@ -161,7 +165,13 @@ const Portfolio = () => {
                 width: 70,
               }}
             >
-              10
+            {//input field to change amount of stocks shown on page
+            }
+            <input
+            style={style.input}
+            onChange={(e) => setStockSize(e.target.value)}
+            placeholder={stocksize}
+          />
             </div>
             <div style={{ padding: 10 }}>41-50 av 350</div>
           </div>
