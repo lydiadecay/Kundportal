@@ -17,42 +17,64 @@ const MyProfile = () => {
     <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Johnny_Depp_Deauville_2019.jpg" alt="profilepic" width="100" height="150"></img>
     <div>
     </div>
+    <div id="divv">
+    <p>Firstname</p>
+    <br/>
     <input
       onChange={(e) => setName(e.target.value)}
       placeholder="Firstname"
     />
+    </div>
+    <div id="divv">
+    <p>Lastname</p>
+    <br/>
     <input
       onChange={(e) => setLastName(e.target.value)}
       placeholder="Lastname"
     />
-    <br/>
+    </div>
+    <div>
+    <p>Social security number</p>
     <input
       onChange={(e) => setSSN(e.target.value)}
       placeholder="Social security number"
     />
-    <br/>
-  <input
-  onChange={(e) => setAddress(e.target.value)}
-  placeholder="Address"
-/>
-<br/>
+    </div>
+    <div>
+    <p>Address</p>
+    <input
+      onChange={(e) => setAddress(e.target.value)}
+      placeholder="Address"
+    />
+    </div>
+<div>
+<p>City</p>
 <input
-onChange={(e) => setCity(e.target.value)}
-placeholder="City"
+  onChange={(e) => setCity(e.target.value)}
+  placeholder="City"
 />
+</div>
+<div>
+<p>ZIP code</p>
 <input
-onChange={(e) => setZIPcode(e.target.value)}
-placeholder="ZIP code"
+  onChange={(e) => setZIPcode(e.target.value)}
+  placeholder="ZIP code"
 />
-<br/>
+</div>
+<div>
+<p>Phone number</p>
 <input
-onChange={(e) => setPhoneNumber(e.target.value)}
-placeholder="Phone number"
+  onChange={(e) => setPhoneNumber(e.target.value)}
+  placeholder="Phone number"
 />
+</div>
+<div>
+<p>Email</p>
 <input
-onChange={(e) => setEmail(e.target.value)}
-placeholder="Email"
+  onChange={(e) => setEmail(e.target.value)}
+  placeholder="Email"
 />
+</div>
   </div>
   );
 };
