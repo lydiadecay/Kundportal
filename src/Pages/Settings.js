@@ -30,12 +30,12 @@ const Settings = () => {
             Settings
           </h1>
 
-          <NavLink to="/myprofile"> My Profile </NavLink>
-          <NavLink to="/changepassword" activeClassName="is-active">
+          <NavLink to="/settings/myprofile"> My Profile </NavLink>
+          <NavLink to="/settings/changepassword" activeClassName="is-active">
             {" "}
             Change Password{" "}
           </NavLink>
-          <NavLink to={preferences} activeClassName="is-active">
+          <NavLink to="/settings/preferences" activeClassName="is-active">
             {" "}
             Preferences{" "}
           </NavLink>

@@ -32,7 +32,7 @@ const Sidebar = () => {
         className="link"
         activeStyle={{ background: "rgba(0,0,0,0.5)" }}
         style={style.link}
-        to="/das"
+        to="/dashboard"
       >
         <img style={{ marginRight: 10 }} src={home} alt="home" />
         Home
