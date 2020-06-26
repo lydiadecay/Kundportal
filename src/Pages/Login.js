@@ -19,6 +19,8 @@ const style = {
     borderRadius: 5,
   },
   input: {
+    display: "flex",
+    flexDirection: "column",
     padding: 20,
     border: "2px solid #ccc",
     borderRadius: 3,
@@ -32,29 +34,31 @@ const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-//login checks the entered info and forwards you if correct
-  const login = () => users.map(user => {
-  
-    if (user.username === username && user.password === password) {
-      console.log("success");
-      setRedirect(true);
-    } else {
-      console.log("error");
-    }});
+  //login checks the entered info and forwards you if correct
+  const login = () =>
+    users.map((user) => {
+      if (user.username === username && user.password === password) {
+        console.log("success");
+        setRedirect(true);
+      } else {
+        console.log("error");
+      }
+    });
 
-    //forgotPassword creates a account from the currently entered username & password
-    //this account is deleted when the site is closed
+  //forgotPassword creates a account from the currently entered username & password
+  //this account is deleted when the site is closed
   const createAccount = () => {
-    users.push({"username":username,"password":password});
-  }
+    users.push({ username: username, password: password });
+  };
 
   //changePassword replaces the password of the account with the username entered
-    //this account is reset when the site is closed
-  const changePassword = () => users.map(user => {
-
-    if (user.username === username) {
-      user.password = password;
-    }});
+  //this account is reset when the site is closed
+  const changePassword = () =>
+    users.map((user) => {
+      if (user.username === username) {
+        user.password = password;
+      }
+    });
 
   if (redirect) {
     return <Redirect push to="/" />;
@@ -80,19 +84,19 @@ const Login = () => {
           onClick={() => login()}
         >
           Login
-          </div>
-          <div
+        </div>
+        <div
           style={{ ...style.input, cursor: "pointer" }}
           onClick={() => createAccount()}
         >
-          create account
+          Create Account
         </div>
         <div
-        style={{ ...style.input, cursor: "pointer" }}
-        onClick={() => changePassword()}
-      >
-      change password
-      </div>
+          style={{ ...style.input, cursor: "pointer" }}
+          onClick={() => changePassword()}
+        >
+          Forgot your password?
+        </div>
       </div>
     </div>
   );
