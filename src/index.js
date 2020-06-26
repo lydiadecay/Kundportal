@@ -30,9 +30,12 @@ const routes =
           <Route path="/portfolio" component={Portfolio} />
           <Route path="/" component={Login} />
 
-          <Route path="/settings/myprofile" component={MyProfile} />
-          <Route path="/settings/changepassword" component={ChangePassword} />
-          <Route path="/settings/preferences" component={Preferences} />
+          <Route path="/SettingsSubPage/myprofile" component={MyProfile} />
+          <Route
+            path="/SettingsSubPage/changepassword"
+            component={ChangePassword}
+          />
+          <Route path="/SettingsSubPage/preferences" component={Preferences} />
           <Route path="/settings/errorpage" component={ErrorPage} />
         </Switch>
       </div>

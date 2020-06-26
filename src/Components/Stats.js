@@ -1,4 +1,6 @@
 import React from "react";
+import { Router } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const style = {
   content: {
@@ -11,14 +13,18 @@ const style = {
   },
 };
 
+function portfolio() {
+  console.log("Portfolio");
+}
+
 const Stats = () => {
   return (
     <div style={style.content}>
       <div style={{ padding: 20, borderBottom: "1px solid #eee" }}>
         My Tenancy
-        <button
+        <NavLink
           style={{
-            marginLeft: 300,
+            marginLeft: 100,
             padding: 20,
             backgroundColor: "#3C3C3B",
             color: "#FFFFFF",
@@ -28,9 +34,10 @@ const Stats = () => {
             textDecoration: "none",
             display: "inline-block",
           }}
+          to="/portfolio"
         >
           My Portfolio
-        </button>
+        </NavLink>
       </div>
       <div
         style={{
@@ -88,14 +95,19 @@ const Stats = () => {
                 marginRight: 10,
               }}
             ></div>
-            <div>
-              <div style={{ fontWeight: "bold" }}>Construction</div>
-              <div style={{ textAlign: "right", padding: 10 }}>12345 SEK</div>
-              <div style={{ fontSize: 12, color: "#333" }}>
-                Company A, Company B
+            <div style={{ display: "flex", flexDirection: "row" }}>
+              <div>
+                <div style={{ fontWeight: "bold" }}>Construction</div>
+                <div style={{ fontSize: 12, color: "#333" }}>
+                  Company A, Company B
+                </div>
               </div>
+
+              <div style={{ padding: 10, marginLeft: "70%" }}>12345</div>
+              <div style={{ padding: 10, color: "#A1A8C3" }}> SEK </div>
             </div>
           </div>
+
           <div style={{ display: "flex", alignItems: "center", padding: 20 }}>
             <div
               style={{
@@ -106,13 +118,19 @@ const Stats = () => {
                 marginRight: 10,
               }}
             ></div>
+            <div style={{ display: "flex", flexDirection: "row" }}>
+              <div>
+                <div style={{ fontWeight: "bold" }}>Medtech</div>
+                <div style={{ fontSize: 12, color: "#333" }}>
+                  Company A, Company B
+                </div>
+              </div>
 
-            <div>
-              <div style={{ fontWeight: "bold" }}>Medtech</div>
-              <div style={{ textAlign: "right", padding: 10 }}>12345 SEK</div>
-              <div style={{ fontSize: 12, color: "#333" }}>Company 123</div>
+              <div style={{ padding: 10, marginLeft: "70%" }}>12345</div>
+              <div style={{ padding: 10, color: "#A1A8C3" }}> SEK </div>
             </div>
           </div>
+
           <div style={{ display: "flex", alignItems: "center", padding: 20 }}>
             <div
               style={{
@@ -123,12 +141,19 @@ const Stats = () => {
                 marginRight: 10,
               }}
             ></div>
-            <div>
-              <div style={{ fontWeight: "bold" }}>Fintech</div>
-              <div style={{ textAlign: "right", padding: 10 }}>12345 SEK</div>
-              <div style={{ fontSize: 12, color: "#333" }}>Company Inc.</div>
+            <div style={{ display: "flex", flexDirection: "row" }}>
+              <div>
+                <div style={{ fontWeight: "bold" }}>Fintech</div>
+                <div style={{ fontSize: 12, color: "#333" }}>
+                  Company A, Company B
+                </div>
+              </div>
+
+              <div style={{ padding: 10, marginLeft: "70%" }}>12345</div>
+              <div style={{ padding: 10, color: "#A1A8C3" }}> SEK </div>
             </div>
           </div>
+
           <div style={{ display: "flex", alignItems: "center", padding: 20 }}>
             <div
               style={{
@@ -139,12 +164,19 @@ const Stats = () => {
                 marginRight: 10,
               }}
             ></div>
-            <div>
-              <div style={{ fontWeight: "bold" }}>Industry X</div>
-              <div style={{ textAlign: "right", padding: 10 }}>12345 SEK</div>
-              <div style={{ fontSize: 12, color: "#333" }}>Company XYZ</div>
+            <div style={{ display: "flex", flexDirection: "row" }}>
+              <div>
+                <div style={{ fontWeight: "bold" }}>Industry X</div>
+                <div style={{ fontSize: 12, color: "#333" }}>
+                  Company A, Company B
+                </div>
+              </div>
+
+              <div style={{ padding: 10, marginLeft: "70%" }}>12345</div>
+              <div style={{ padding: 10, color: "#A1A8C3" }}> SEK </div>
             </div>
           </div>
+
           <div style={{ display: "flex", alignItems: "center", padding: 20 }}>
             <div
               style={{
@@ -155,12 +187,16 @@ const Stats = () => {
                 marginRight: 10,
               }}
             ></div>
-            <div>
-              <div style={{ fontWeight: "bold" }}>Miscellaneous</div>
-              <div style={{ textAlign: "right", padding: 10 }}>12345 SEK</div>
-              <div style={{ fontSize: 12, color: "#333" }}>
-                Company 345, Company 678
+            <div style={{ display: "flex", flexDirection: "row" }}>
+              <div>
+                <div style={{ fontWeight: "bold" }}>Miscellaneous</div>
+                <div style={{ fontSize: 12, color: "#333" }}>
+                  Company A, Company B
+                </div>
               </div>
+
+              <div style={{ padding: 10, marginLeft: "70%" }}>12345</div>
+              <div style={{ padding: 10, color: "#A1A8C3" }}> SEK </div>
             </div>
           </div>
         </div>

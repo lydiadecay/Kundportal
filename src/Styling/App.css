@@ -3,7 +3,7 @@
 .sidebar {
   display: flex;
   width: 220px;
-  height: 800px;
+  height: auto;
   background: #3c3c3b;
   min-height: 100vh;
   flex-direction: column;
@@ -33,41 +33,6 @@
   background: rgba(0, 0, 0, 5);
 }
 
-.stocks-table {
-  font-family: "Poppins";
-  font-size: 14px;
-}
-
-.th-company {
-  height: 14px;
-  margin-right: 40px;
-}
-
-.th-tenancy {
-  height: 14px;
-  margin-right: 40px;
-}
-
-.th-stocktype {
-  height: 14px;
-  margin-right: 40px;
-}
-.th-amount {
-  height: 14px;
-  margin-right: 40px;
-}
-.th-stocknumber {
-  height: 14px;
-  margin-right: 40px;
-}
-.th-share {
-  height: 14px;
-  margin-right: 40px;
-}
-.th-value {
-  height: 14px;
-}
-
 .logOut {
   text-align: center;
   color: #c9b791;
@@ -76,5 +41,6 @@
   font-weight: 100;
   font-size: 13px;
   padding: 20px;
-  margin-top: 65vh;
+  position: fixed;
+  bottom: 0;
 }
