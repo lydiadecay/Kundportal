@@ -29,13 +29,19 @@ const style = {
   },
   body: {
     color: "#000",
-    fontFamily: "Poppins",
+  },
+  button: {
+    padding: 10,
+    backgroundColor: "#FFD98D",
+    border: "none",
+    textDecoration: "none",
+    display: "inline-block",
   },
 };
 
 const generateButtons = () => {
   let num = "1234567".split("");
-  return num.map((num) => <button style={{ padding: 10 }}>{num}</button>);
+  return num.map((num) => <button style={style.button}>{num}</button>);
 };
 
 const Portfolio = () => {
@@ -43,6 +49,9 @@ const Portfolio = () => {
     <div style={style.box}>
       <span style={{ fontSize: 22, marginBottom: 20, color: "#656565" }}>
         My Portfolio
+        <div style={{ color: "#A1A8C3", fontSize: 13 }}>
+          | Last updated 2020-06-26
+        </div>
       </span>
       <div style={style.content}>
         <table className="stocks-table">
@@ -136,15 +145,22 @@ const Portfolio = () => {
         </table>
         <div style={{ display: "flex", justifyContent: "space-between" }}>
           <div style={{ display: "flex" }}>
-            <button style={{ padding: 10 }}>{"<<"} </button>
-            <button style={{ padding: 10 }}>{"<"} </button>
+            <button style={style.button}>{"<<"} </button>
+            <button style={style.button}>{"<"} </button>
             {generateButtons()}
-            <button style={{ padding: 10 }}>{">"}</button>
-            <button style={{ padding: 10 }}>{">>"}</button>
+            <button style={style.button}>{">"}</button>
+            <button style={style.button}>{">>"}</button>
           </div>
 
           <div style={{ display: "flex" }}>
-            <div style={{ padding: 10, bordeRadius: 3, background: "yellow" }}>
+            <div
+              style={{
+                padding: 10,
+                borderRadius: 3,
+                background: "#FEEBC4",
+                width: 70,
+              }}
+            >
               10
             </div>
             <div style={{ padding: 10 }}>41-50 av 350</div>
@@ -156,12 +172,3 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
-
-/**TO DO:
-- last updated
-- hoverbox 
-- navigate through pages
-- buttons for page numbers
-- dropdown list for pages
-- styling  
-*/

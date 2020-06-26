@@ -16,8 +16,44 @@ const Stats = () => {
     <div style={style.content}>
       <div style={{ padding: 20, borderBottom: "1px solid #eee" }}>
         My Tenancy
+        <button
+          style={{
+            marginLeft: 300,
+            padding: 20,
+            backgroundColor: "#3C3C3B",
+            color: "#FFFFFF",
+            borderRadius: 5,
+            textAlign: "center",
+            border: "none",
+            textDecoration: "none",
+            display: "inline-block",
+          }}
+        >
+          My Portfolio
+        </button>
       </div>
-      <div></div>
+      <div
+        style={{
+          display: "flex",
+          color: "#3C4368",
+          fontSize: 30,
+          fontWeight: "bold",
+          padding: 20,
+        }}
+      >
+        827,300 SEK
+        <div
+          style={{
+            color: "#A1A8C3",
+            fontSize: 13,
+            marginLeft: 200,
+            fontWeight: "lighter",
+          }}
+        >
+          Last updated 2020-06-26
+        </div>
+      </div>
+
       <div style={{ padding: 20 }}>
         <div
           style={{
@@ -54,6 +90,7 @@ const Stats = () => {
             ></div>
             <div>
               <div style={{ fontWeight: "bold" }}>Construction</div>
+              <div style={{ textAlign: "right", padding: 10 }}>12345 SEK</div>
               <div style={{ fontSize: 12, color: "#333" }}>
                 Company A, Company B
               </div>
@@ -88,6 +125,7 @@ const Stats = () => {
             ></div>
             <div>
               <div style={{ fontWeight: "bold" }}>Fintech</div>
+              <div style={{ textAlign: "right", padding: 10 }}>12345 SEK</div>
               <div style={{ fontSize: 12, color: "#333" }}>Company Inc.</div>
             </div>
           </div>
@@ -103,6 +141,7 @@ const Stats = () => {
             ></div>
             <div>
               <div style={{ fontWeight: "bold" }}>Industry X</div>
+              <div style={{ textAlign: "right", padding: 10 }}>12345 SEK</div>
               <div style={{ fontSize: 12, color: "#333" }}>Company XYZ</div>
             </div>
           </div>
@@ -118,6 +157,7 @@ const Stats = () => {
             ></div>
             <div>
               <div style={{ fontWeight: "bold" }}>Miscellaneous</div>
+              <div style={{ textAlign: "right", padding: 10 }}>12345 SEK</div>
               <div style={{ fontSize: 12, color: "#333" }}>
                 Company 345, Company 678
               </div>
