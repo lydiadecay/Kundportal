@@ -28,12 +28,13 @@ const routes =
           <Route path="/dashboard" component={Dashboard} exact={true} />
           <Route exact path="/settings" component={Settings} />
           <Route path="/portfolio" component={Portfolio} />
-          <Route path="/" component={Login} />
 
           <Route path="/settings/myprofile" component={MyProfile} />
           <Route path="/settings/changepassword" component={ChangePassword} />
           <Route path="/settings/preferences" component={Preferences} />
           <Route path="/settings/errorpage" component={ErrorPage} />
+          <Route path="/" component={Login} />
+
         </Switch>
       </div>
     </BrowserRouter>
