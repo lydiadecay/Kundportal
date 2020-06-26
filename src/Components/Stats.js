@@ -17,6 +17,7 @@ const Stats = () => {
       <div style={{ padding: 20, borderBottom: "1px solid #eee" }}>
         My Tenancy
       </div>
+      <div></div>
       <div style={{ padding: 20 }}>
         <div
           style={{
@@ -26,10 +27,19 @@ const Stats = () => {
             marginTop: 10,
           }}
         >
-          <div style={{ height: 20, width: "20%", background: "blue" }}></div>
-          <div style={{ height: 20, width: "40%", background: "green" }}></div>
-          <div style={{ height: 20, width: "10%", background: "red" }}></div>
-          <div style={{ height: 20, width: "30%", background: "purple" }}></div>
+          <div
+            style={{ height: 20, width: "20%", background: "#5B74FF" }}
+          ></div>
+          <div
+            style={{ height: 20, width: "30%", background: "#34BFA3" }}
+          ></div>
+          <div style={{ height: 20, width: "5%", background: "#FD397A" }}></div>
+          <div
+            style={{ height: 20, width: "30%", background: "#3D4465" }}
+          ></div>
+          <div
+            style={{ height: 20, width: "15%", background: "#EDEFF3" }}
+          ></div>
         </div>
         <div>
           <div style={{ display: "flex", alignItems: "center", padding: 20 }}>
@@ -38,13 +48,15 @@ const Stats = () => {
                 width: 20,
                 height: 20,
                 borderRadius: 5,
-                background: "blue",
+                background: "#5B74FF",
                 marginRight: 10,
               }}
             ></div>
             <div>
-              <div style={{ fontWeight: "bold" }}>Title</div>
-              <div style={{ fontSize: 12, color: "#333" }}>subTitle</div>
+              <div style={{ fontWeight: "bold" }}>Construction</div>
+              <div style={{ fontSize: 12, color: "#333" }}>
+                Company A, Company B
+              </div>
             </div>
           </div>
           <div style={{ display: "flex", alignItems: "center", padding: 20 }}>
@@ -53,13 +65,15 @@ const Stats = () => {
                 width: 20,
                 height: 20,
                 borderRadius: 5,
-                background: "blue",
+                background: "#34BFA3",
                 marginRight: 10,
               }}
             ></div>
+
             <div>
-              <div style={{ fontWeight: "bold" }}>Title</div>
-              <div style={{ fontSize: 12, color: "#333" }}>subTitle</div>
+              <div style={{ fontWeight: "bold" }}>Medtech</div>
+              <div style={{ textAlign: "right", padding: 10 }}>12345 SEK</div>
+              <div style={{ fontSize: 12, color: "#333" }}>Company 123</div>
             </div>
           </div>
           <div style={{ display: "flex", alignItems: "center", padding: 20 }}>
@@ -68,13 +82,13 @@ const Stats = () => {
                 width: 20,
                 height: 20,
                 borderRadius: 5,
-                background: "blue",
+                background: "#FD397A",
                 marginRight: 10,
               }}
             ></div>
             <div>
-              <div style={{ fontWeight: "bold" }}>Title</div>
-              <div style={{ fontSize: 12, color: "#333" }}>subTitle</div>
+              <div style={{ fontWeight: "bold" }}>Fintech</div>
+              <div style={{ fontSize: 12, color: "#333" }}>Company Inc.</div>
             </div>
           </div>
           <div style={{ display: "flex", alignItems: "center", padding: 20 }}>
@@ -83,13 +97,13 @@ const Stats = () => {
                 width: 20,
                 height: 20,
                 borderRadius: 5,
-                background: "blue",
+                background: "#3D4465",
                 marginRight: 10,
               }}
             ></div>
             <div>
-              <div style={{ fontWeight: "bold" }}>Title</div>
-              <div style={{ fontSize: 12, color: "#333" }}>subTitle</div>
+              <div style={{ fontWeight: "bold" }}>Industry X</div>
+              <div style={{ fontSize: 12, color: "#333" }}>Company XYZ</div>
             </div>
           </div>
           <div style={{ display: "flex", alignItems: "center", padding: 20 }}>
@@ -98,13 +112,15 @@ const Stats = () => {
                 width: 20,
                 height: 20,
                 borderRadius: 5,
-                background: "blue",
+                background: "#EDEFF3",
                 marginRight: 10,
               }}
             ></div>
             <div>
-              <div style={{ fontWeight: "bold" }}>Title</div>
-              <div style={{ fontSize: 12, color: "#333" }}>subTitle</div>
+              <div style={{ fontWeight: "bold" }}>Miscellaneous</div>
+              <div style={{ fontSize: 12, color: "#333" }}>
+                Company 345, Company 678
+              </div>
             </div>
           </div>
         </div>

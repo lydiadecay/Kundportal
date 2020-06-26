@@ -35,7 +35,7 @@ const style = {
 
 const generateButtons = () => {
   let num = "1234567".split("");
-  return num.map((num) => <div style={{ padding: 10 }}>{num}</div>);
+  return num.map((num) => <button style={{ padding: 10 }}>{num}</button>);
 };
 
 const Portfolio = () => {
@@ -136,11 +136,11 @@ const Portfolio = () => {
         </table>
         <div style={{ display: "flex", justifyContent: "space-between" }}>
           <div style={{ display: "flex" }}>
-            <div style={{ padding: 10 }}>{"<<"} </div>
-            <div style={{ padding: 10 }}>{"<"} </div>
+            <button style={{ padding: 10 }}>{"<<"} </button>
+            <button style={{ padding: 10 }}>{"<"} </button>
             {generateButtons()}
-            <div style={{ padding: 10 }}>{">"}</div>
-            <div style={{ padding: 10 }}>{">>"}</div>
+            <button style={{ padding: 10 }}>{">"}</button>
+            <button style={{ padding: 10 }}>{">>"}</button>
           </div>
 
           <div style={{ display: "flex" }}>
