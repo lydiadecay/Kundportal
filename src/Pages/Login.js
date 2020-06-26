@@ -32,14 +32,29 @@ const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const login = () => {
-    if (users[0].username === username && users[0].password === password) {
+//login checks the entered info and forwards you if correct
+  const login = () => users.map(user => {
+  
+    if (user.username === username && user.password === password) {
       console.log("success");
       setRedirect(true);
     } else {
       console.log("error");
-    }
-  };
+    }});
+
+    //forgotPassword creates a account from the currently entered username & password
+    //this account is deleted when the site is closed
+  const createAccount = () => {
+    users.push({"username":username,"password":password});
+  }
+
+  //changePassword replaces the password of the account with the username entered
+    //this account is reset when the site is closed
+  const changePassword = () => users.map(user => {
+
+    if (user.username === username) {
+      user.password = password;
+    }});
 
   if (redirect) {
     return <Redirect push to="/" />;
@@ -65,7 +80,19 @@ const Login = () => {
           onClick={() => login()}
         >
           Login
+          </div>
+          <div
+          style={{ ...style.input, cursor: "pointer" }}
+          onClick={() => createAccount()}
+        >
+          create account
         </div>
+        <div
+        style={{ ...style.input, cursor: "pointer" }}
+        onClick={() => changePassword()}
+      >
+      change password
+      </div>
       </div>
     </div>
   );

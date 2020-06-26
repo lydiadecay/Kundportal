@@ -7,11 +7,14 @@ img{
 }
 
 input{
-    float: left;
     margin: 8px;
 }
     
 p{
     float: left;
     margin: auto;
+}
+
+#divv{
+    background-color: blue;
 }
