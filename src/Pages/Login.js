@@ -38,8 +38,6 @@ const Login = () => {
     if (user.username === username && user.password === password) {
       console.log("success");
       setRedirect(true);
-    } else {
-      console.log("error");
     }});
 
     //forgotPassword creates a account from the currently entered username & password
@@ -57,7 +55,7 @@ const Login = () => {
     }});
 
   if (redirect) {
-    return <Redirect push to="/" />;
+    return <Redirect push to="/dashboard" />;
   }
   return (
     <div style={style.box}>
