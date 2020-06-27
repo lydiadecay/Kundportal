@@ -3,7 +3,8 @@ import users from "../Data/users.json";
 import profilepic from "../Pictures/stockpic.jpg";
 import { NavLink, useLocation } from "react-router-dom";
 
-const userName = JSON.stringify(users.username);
+const JSONUserData = JSON.stringify(users);
+const userData = JSON.parse(JSONUserData);
 
 const style = {
   content: {
@@ -62,12 +63,12 @@ const Profile = () => {
             }}
           ></img>{" "}
           <div style={{ alignSelf: "center" }}>
-            {userName}
+            {userData.firstname}
             <div>
               <div style={{ color: "#A1A8C3", fontSize: 10 }}>
                 Person Nr. / Organisation Nr.
               </div>
-              <div>780817-5869</div>
+              <div>{userData.personnum}</div>
             </div>
           </div>
         </div>
@@ -96,11 +97,11 @@ const Profile = () => {
             <div style={{ marginTop: "9%" }}>City:</div>
           </div>
           <div>
-            <div style={{ marginTop: "9%" }}>0799465654</div>
-            <div style={{ marginTop: "9%" }}>user@school.se</div>
-            <div style={{ marginTop: "9%" }}>Lantmilsgatan 7</div>
-            <div style={{ marginTop: "9%" }}>41501</div>
-            <div style={{ marginTop: "9%" }}>Gothenburg</div>
+            <div style={{ marginTop: "9%" }}>{userData.phone}</div>
+            <div style={{ marginTop: "9%" }}>{userData.email}</div>
+            <div style={{ marginTop: "9%" }}>{userData.address} </div>
+            <div style={{ marginTop: "9%" }}>{userData.zipcode}</div>
+            <div style={{ marginTop: "9%" }}>{userData.city}</div>
           </div>
         </div>
       </div>

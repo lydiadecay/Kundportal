@@ -50,7 +50,7 @@ const generateButtons = () => {
 const Portfolio = () => {
   const [stocksize, setStockSize] = useState("");
   return (
-      <div style={style.box}>
+    <div style={style.box}>
       <span style={{ fontSize: 22, marginBottom: 20, color: "#656565" }}>
         My Portfolio
         <div style={{ color: "#A1A8C3", fontSize: 13 }}>
@@ -165,13 +165,14 @@ const Portfolio = () => {
                 width: 70,
               }}
             >
-            {//input field to change amount of stocks shown on page
-            }
-            <input
-            style={style.input}
-            onChange={(e) => setStockSize(e.target.value)}
-            placeholder={stocksize}
-          />
+              {
+                //input field to change amount of stocks shown on page
+              }
+              <input
+                style={style.input}
+                onChange={(e) => setStockSize(e.target.value)}
+                placeholder={stocksize}
+              />
             </div>
             <div style={{ padding: 10 }}>41-50 av 350</div>
           </div>

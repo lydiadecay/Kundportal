@@ -24,7 +24,7 @@ const Stats = () => {
         My Tenancy
         <NavLink
           style={{
-            marginLeft: 100,
+            marginLeft: 200,
             padding: 20,
             backgroundColor: "#3C3C3B",
             color: "#FFFFFF",
@@ -43,8 +43,8 @@ const Stats = () => {
         style={{
           display: "flex",
           color: "#3C4368",
-          fontSize: 30,
-          fontWeight: "bold",
+          fontSize: 27,
+          fontWeight: 500,
           padding: 20,
         }}
       >
@@ -53,7 +53,7 @@ const Stats = () => {
           style={{
             color: "#A1A8C3",
             fontSize: 13,
-            marginLeft: 200,
+            marginLeft: 150,
             fontWeight: "lighter",
           }}
         >

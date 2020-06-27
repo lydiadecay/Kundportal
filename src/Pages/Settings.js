@@ -1,5 +1,10 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import MyProfile from "../Components/MyProfile";
+import ChangePassword from "../Components/ChangePassword";
+import Preferences from "../Components/Preferences";
+
+import Tabs from "../Components/Tabs";
+require("../Styling/styles.css");
 
 const style = {
   box: {
@@ -19,29 +24,33 @@ const style = {
   },
 };
 
-const Settings = () => {
+function Settings() {
   return (
     <div style={style.box}>
+      <h1 style={{ fontSize: 22, marginBottom: 20, color: "#656565" }}>
+        {" "}
+        Settings
+      </h1>
       <div style={style.content}>
-        <header>
-          <h1 style={{ fontSize: 22, marginBottom: 20, color: "#656565" }}>
-            {" "}
-            Settings
-          </h1>
-
-          <NavLink to="/settings/myprofile"> My Profile </NavLink>
-          <NavLink to="/settings/changepassword" activeClassName="is-active">
-            {" "}
-            Change Password{" "}
-          </NavLink>
-          <NavLink to="/settings/preferences" activeClassName="is-active">
-            {" "}
-            Preferences{" "}
-          </NavLink>
-        </header>
+        <div>
+          <Tabs>
+            <div label="My Profile">
+              <MyProfile />
+            </div>
+            <div label="Change Password">
+              <ChangePassword />
+            </div>
+            <div label="Preferences">
+              <Preferences />
+            </div>
+          </Tabs>
+        </div>
       </div>
     </div>
   );
-};
+}
+
+const container = document.createElement("div");
+document.body.appendChild(container);
 
 export default Settings;

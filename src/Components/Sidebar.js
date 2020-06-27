@@ -18,6 +18,34 @@ const style = {
     opacity: 1,
     padding: 20,
   },
+
+  link: {
+    padding: "10px 20px",
+    background: "#292929",
+    cursor: "pointer",
+    color: "#fdcc6b",
+    textDecoration: "none",
+    fontWeight: 100,
+    fontSize: 13,
+    display: "flex",
+    alignItems: "center",
+  },
+  logout: {
+    display: "flex",
+    alignItems: "center",
+    textDecoration: "none",
+    color: "#c9b791",
+    borderTop: "1px solid #c9b791",
+    padding: "10px 20px",
+    fontWeight: 100,
+    fontSize: 13,
+  },
+  fixed: {
+    display: "flex",
+    flexDirection: "column-reverse",
+    justifyContent: "flex-end",
+    alignItems: "stretch",
+  },
 };
 
 const Sidebar = () => {
@@ -54,17 +82,8 @@ const Sidebar = () => {
       >
         <img style={{ marginRight: 10 }} src={cog} alt="cog" /> Settings
       </NavLink>
-      <div className="logOut">
-        <NavLink
-          style={{
-            display: "flex",
-            alignItems: "center",
-            textDecoration: "none",
-            color: "#c9b791",
-            borderTop: "1px solid #c9b791",
-          }}
-          to="/login"
-        >
+      <div style={style.fixed}>
+        <NavLink style={style.logout} to="/login">
           <img style={{ marginRight: 10 }} src={logout} alt="logout" /> Log out
         </NavLink>
       </div>

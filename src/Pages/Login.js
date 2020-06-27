@@ -34,13 +34,14 @@ const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-//login checks the entered info and forwards you if correct
-  const login = () => users.map(user => {
-  
-    if (user.username === username && user.password === password) {
-      console.log("success");
-      setRedirect(true);
-    }});
+  //login checks the entered info and forwards you if correct
+  const login = () =>
+    users.map((user) => {
+      if (user.username === username && user.password === password) {
+        console.log("success");
+        setRedirect(true);
+      }
+    });
 
   //forgotPassword creates a account from the currently entered username & password
   //this account is deleted when the site is closed
