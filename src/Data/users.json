@@ -1,3 +1,4 @@
+[
 {
   "username": "username",
   "password": "password",
@@ -9,4 +10,17 @@
   "email": "user@school.se",
   "personnum": "780817-5869",
   "phone": "079946564"
-}
+},
+{
+    "username": "sim",
+    "password": "ben",
+    "firstname": "simon",
+    "lastname": "bengtsson",
+    "address": "skallsjö 7",
+    "zipcode": "44832",
+    "city": "Floda",
+    "email": "simon@school.se",
+    "personnum": "780817-5555",
+    "phone": "079948474"
+  }
+]
