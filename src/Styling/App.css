@@ -5,7 +5,7 @@
   width: 220px;
   height: auto;
   background: #3c3c3b;
-  min-height: 100vh;
+  min-height: 500vh;
   flex-direction: column;
 }
 
@@ -16,31 +16,6 @@
   align-items: center;
 }
 
-.link {
-  padding: 10px 20px;
-  background: #292929;
-  cursor: pointer;
-  color: #fdcc6b;
-  text-decoration: none;
-  font-family: "Poppins";
-  font-weight: 100;
-  font-size: 13px;
-  display: flex;
-  align-items: center;
-}
-
 .link:hover {
   background: rgba(0, 0, 0, 5);
-}
-
-.logOut {
-  text-align: center;
-  color: #c9b791;
-  text-decoration: none;
-  font-family: "Poppins";
-  font-weight: 100;
-  font-size: 13px;
-  padding: 20px;
-  position: fixed;
-  bottom: 0;
 }

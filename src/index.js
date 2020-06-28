@@ -8,9 +8,9 @@ import Login from "./Pages/Login";
 import Settings from "./Pages/Settings";
 import Portfolio from "./Pages/Portfolio";
 import Header from "./Components/Sidebar";
-import MyProfile from "./Pages/MyProfile";
-import ChangePassword from "./Pages/ChangePassword";
-import Preferences from "./Pages/Preferences";
+import MyProfile from "./Components/MyProfile";
+import ChangePassword from "./Components/ChangePassword";
+import Preferences from "./Components/Preferences";
 
 const ErrorPage = () => (
   <div>

@@ -1,6 +1,5 @@
 import React from "react";
-import { Router } from "react-router-dom";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const style = {
   content: {
@@ -13,10 +12,6 @@ const style = {
   },
 };
 
-function portfolio() {
-  console.log("Portfolio");
-}
-
 const Stats = () => {
   return (
     <div style={style.content}>
@@ -24,7 +19,7 @@ const Stats = () => {
         My Tenancy
         <NavLink
           style={{
-            marginLeft: 100,
+            marginLeft: 200,
             padding: 20,
             backgroundColor: "#3C3C3B",
             color: "#FFFFFF",
@@ -43,8 +38,8 @@ const Stats = () => {
         style={{
           display: "flex",
           color: "#3C4368",
-          fontSize: 30,
-          fontWeight: "bold",
+          fontSize: 27,
+          fontWeight: 500,
           padding: 20,
         }}
       >
@@ -53,7 +48,8 @@ const Stats = () => {
           style={{
             color: "#A1A8C3",
             fontSize: 13,
-            marginLeft: 200,
+            marginLeft: "auto",
+            paddingTop: 15,
             fontWeight: "lighter",
           }}
         >
@@ -61,7 +57,7 @@ const Stats = () => {
         </div>
       </div>
 
-      <div style={{ padding: 20 }}>
+      <div style={{ padding: 30 }}>
         <div
           style={{
             display: "flex",
@@ -85,7 +81,13 @@ const Stats = () => {
           ></div>
         </div>
         <div>
-          <div style={{ display: "flex", alignItems: "center", padding: 20 }}>
+          <div
+            style={{
+              display: "flex",
+              marginTop: 20,
+              width: "auto",
+            }}
+          >
             <div
               style={{
                 width: 20,
@@ -95,20 +97,27 @@ const Stats = () => {
                 marginRight: 10,
               }}
             ></div>
-            <div style={{ display: "flex", flexDirection: "row" }}>
+            <div style={{ display: "flex" }}>
               <div>
                 <div style={{ fontWeight: "bold" }}>Construction</div>
                 <div style={{ fontSize: 12, color: "#333" }}>
                   Company A, Company B
                 </div>
               </div>
-
-              <div style={{ padding: 10, marginLeft: "70%" }}>12345</div>
-              <div style={{ padding: 10, color: "#A1A8C3" }}> SEK </div>
+              <div style={{ display: "flex", flexDirection: "row-reverse" }}>
+                <div style={{ padding: 10, color: "#A1A8C3" }}> SEK </div>
+                <div style={{ padding: 10 }}>12345</div>
+              </div>
             </div>
           </div>
 
-          <div style={{ display: "flex", alignItems: "center", padding: 20 }}>
+          <div
+            style={{
+              display: "flex",
+              marginTop: 20,
+              width: "auto",
+            }}
+          >
             <div
               style={{
                 width: 20,
@@ -118,20 +127,27 @@ const Stats = () => {
                 marginRight: 10,
               }}
             ></div>
-            <div style={{ display: "flex", flexDirection: "row" }}>
+            <div style={{ display: "flex" }}>
               <div>
                 <div style={{ fontWeight: "bold" }}>Medtech</div>
                 <div style={{ fontSize: 12, color: "#333" }}>
                   Company A, Company B
                 </div>
               </div>
-
-              <div style={{ padding: 10, marginLeft: "70%" }}>12345</div>
-              <div style={{ padding: 10, color: "#A1A8C3" }}> SEK </div>
+              <div style={{ display: "flex", flexDirection: "row-reverse" }}>
+                <div style={{ padding: 10, color: "#A1A8C3" }}> SEK </div>
+                <div style={{ padding: 10 }}>12345</div>
+              </div>
             </div>
           </div>
 
-          <div style={{ display: "flex", alignItems: "center", padding: 20 }}>
+          <div
+            style={{
+              display: "flex",
+              marginTop: 20,
+              width: "auto",
+            }}
+          >
             <div
               style={{
                 width: 20,
@@ -141,20 +157,27 @@ const Stats = () => {
                 marginRight: 10,
               }}
             ></div>
-            <div style={{ display: "flex", flexDirection: "row" }}>
+            <div style={{ display: "flex" }}>
               <div>
                 <div style={{ fontWeight: "bold" }}>Fintech</div>
                 <div style={{ fontSize: 12, color: "#333" }}>
                   Company A, Company B
                 </div>
               </div>
-
-              <div style={{ padding: 10, marginLeft: "70%" }}>12345</div>
-              <div style={{ padding: 10, color: "#A1A8C3" }}> SEK </div>
+              <div style={{ display: "flex", flexDirection: "row-reverse" }}>
+                <div style={{ padding: 10, color: "#A1A8C3" }}> SEK </div>
+                <div style={{ padding: 10 }}>12345</div>
+              </div>
             </div>
           </div>
 
-          <div style={{ display: "flex", alignItems: "center", padding: 20 }}>
+          <div
+            style={{
+              display: "flex",
+              marginTop: 20,
+              width: "auto",
+            }}
+          >
             <div
               style={{
                 width: 20,
@@ -164,20 +187,28 @@ const Stats = () => {
                 marginRight: 10,
               }}
             ></div>
-            <div style={{ display: "flex", flexDirection: "row" }}>
+            <div style={{ display: "flex" }}>
               <div>
                 <div style={{ fontWeight: "bold" }}>Industry X</div>
                 <div style={{ fontSize: 12, color: "#333" }}>
                   Company A, Company B
                 </div>
               </div>
-
-              <div style={{ padding: 10, marginLeft: "70%" }}>12345</div>
-              <div style={{ padding: 10, color: "#A1A8C3" }}> SEK </div>
+              <div style={{ display: "flex", flexDirection: "row-reverse" }}>
+                <div style={{ padding: 10, color: "#A1A8C3" }}> SEK </div>
+                <div style={{ padding: 10 }}>12345</div>
+              </div>
             </div>
           </div>
 
-          <div style={{ display: "flex", alignItems: "center", padding: 20 }}>
+          <div
+            style={{
+              display: "flex",
+              marginTop: 20,
+              width: "auto",
+            }}
+          >
+            {" "}
             <div
               style={{
                 width: 20,
@@ -187,16 +218,17 @@ const Stats = () => {
                 marginRight: 10,
               }}
             ></div>
-            <div style={{ display: "flex", flexDirection: "row" }}>
+            <div style={{ display: "flex" }}>
               <div>
                 <div style={{ fontWeight: "bold" }}>Miscellaneous</div>
                 <div style={{ fontSize: 12, color: "#333" }}>
                   Company A, Company B
                 </div>
               </div>
-
-              <div style={{ padding: 10, marginLeft: "70%" }}>12345</div>
-              <div style={{ padding: 10, color: "#A1A8C3" }}> SEK </div>
+              <div style={{ display: "flex", flexDirection: "row-reverse" }}>
+                <div style={{ padding: 10, color: "#A1A8C3" }}> SEK </div>
+                <div style={{ padding: 10 }}>12345</div>
+              </div>
             </div>
           </div>
         </div>

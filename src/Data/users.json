@@ -1,4 +1,12 @@
-[
-{ "username": "username", "password": "password" },
-{ "username": "sim", "password": "ben" }
-]
+{
+  "username": "username",
+  "password": "password",
+  "firstname": "Jane",
+  "lastname": "Doe",
+  "address": "Lantmilsgatan 7",
+  "zipcode": "41501",
+  "city": "Gothenburg",
+  "email": "user@school.se",
+  "personnum": "780817-5869",
+  "phone": "079946564"
+}
