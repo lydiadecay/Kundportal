@@ -140,7 +140,7 @@ const MyProfile = () => {
         </div>
       </form>
       <div style={style.formBorder}></div>
-      <div style={{ display: "flex" }}>
+      <div style={{ flexDirection: "row-reverse", display: "flex" }}>
         <Button onClick={handleClick} text={"Save"} />
       </div>
     </div>

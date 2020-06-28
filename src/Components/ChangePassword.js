@@ -40,7 +40,7 @@ function handleClick() {
 const ChangePassword = () => {
   return (
     <div>
-      <div style={style.formBorder}>
+      <div>
         <div style={style.form}>
           <label style={style.label}>Current password</label>
           <input
@@ -66,7 +66,8 @@ const ChangePassword = () => {
           />
         </div>
       </div>
-      <div style={{ ...style.formBorder, display: "flex" }}>
+      <div style={style.formBorder}></div>
+      <div style={{ flexDirection: "row-reverse", display: "flex" }}>
         <Button onClick={handleClick} text={"Save"} />
       </div>
     </div>

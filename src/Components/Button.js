@@ -10,7 +10,6 @@ const style = {
     border: "none",
     textDecoration: "none",
     display: "inline-block",
-    marginLeft: "auto",
     padding: 20,
     color: "#FFFFFF",
   },

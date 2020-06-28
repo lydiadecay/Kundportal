@@ -58,7 +58,7 @@ function handleCheckboxChange() {
 }
 
 function handleClick() {
-  console.log("Save Button has been clicked.");
+  console.log("Save Button was clicked.");
 }
 
 const Preferences = () => {
@@ -128,7 +128,7 @@ const Preferences = () => {
         (This link will take you to the Handels Bank website.)
       </div>
       <div style={style.formBorder}></div>
-      <div style={{ display: "flex" }}>
+      <div style={{ flexDirection: "row-reverse", display: "flex" }}>
         <Button onClick={handleClick} text={"Save"} />
       </div>
     </div>
