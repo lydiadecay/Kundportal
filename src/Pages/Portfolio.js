@@ -48,7 +48,7 @@ const generateButtons = () => {
 };
 
 const Portfolio = () => {
-  const [stocksize, setStockSize] = useState("");
+  const [stocksize, setStockSize] = useState(10);
   return (
       <div style={style.box}>
       <span style={{ fontSize: 22, marginBottom: 20, color: "#656565" }}>
